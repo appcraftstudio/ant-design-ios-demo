@@ -29,7 +29,7 @@ struct ButtonDemoView: View {
     }
     
     // MARK: - Sections
-
+    
     struct TypeSection: View {
         var body: some View {
             Section("Type") {
@@ -82,13 +82,13 @@ struct ButtonDemoView: View {
     }
     
     struct SizeSection: View {
-        @State var size: Size = .large
+        @State var size: ComponentSize = .large
 
         var body: some View {
             Section("Size") {
                 VStack(alignment: .leading) {
                     Picker("Size", selection: $size) {
-                        ForEach(Size.allCases, id: \.self) { size in
+                        ForEach(ComponentSize.allCases, id: \.self) { size in
                             Text(size.rawValue.capitalized)
                         }
                     }
@@ -100,8 +100,7 @@ struct ButtonDemoView: View {
                         }
                         .buttonStyle(ButtonStyle(
                             type: .primary,
-                            layout: .titleOnly,
-                            size: size
+                            layout: .titleOnly
                         ))
 
                         Button(action: { }) {
@@ -109,8 +108,7 @@ struct ButtonDemoView: View {
                         }
                         .buttonStyle(ButtonStyle(
                             type: .default,
-                            layout: .titleOnly,
-                            size: size
+                            layout: .titleOnly
                         ))
 
                         Button(action: { }) {
@@ -118,8 +116,7 @@ struct ButtonDemoView: View {
                         }
                         .buttonStyle(ButtonStyle(
                             type: .dashed,
-                            layout: .titleOnly,
-                            size: size
+                            layout: .titleOnly
                         ))
 
                         Button(action: { }) {
@@ -127,8 +124,7 @@ struct ButtonDemoView: View {
                         }
                         .buttonStyle(ButtonStyle(
                             type: .link,
-                            layout: .titleOnly,
-                            size: size
+                            layout: .titleOnly
                         ))
 
                         HStack {
@@ -138,8 +134,7 @@ struct ButtonDemoView: View {
                             .buttonStyle(ButtonStyle(
                                 type: .primary,
                                 shape: .square,
-                                layout: .iconOnly,
-                                size: size
+                                layout: .iconOnly
                             ))
 
                             Button(action: { }) {
@@ -148,8 +143,7 @@ struct ButtonDemoView: View {
                             .buttonStyle(ButtonStyle(
                                 type: .primary,
                                 shape: .circle,
-                                layout: .iconOnly,
-                                size: size
+                                layout: .iconOnly
                             ))
                             
                             Button(action: { }) {
@@ -158,10 +152,8 @@ struct ButtonDemoView: View {
                             .buttonStyle(ButtonStyle(
                                 type: .primary,
                                 shape: .round,
-                                layout: .iconOnly,
-                                size: size
+                                layout: .iconOnly
                             ))
-                            
                         }
                         
                         Button(action: { }) {
@@ -170,8 +162,7 @@ struct ButtonDemoView: View {
                         .buttonStyle(ButtonStyle(
                             type: .primary,
                             shape: .round,
-                            layout: .titleAndIcon,
-                            size: size
+                            layout: .titleAndIcon
                         ))
 
                         Button(action: { }) {
@@ -179,11 +170,11 @@ struct ButtonDemoView: View {
                         }
                         .buttonStyle(ButtonStyle(
                             type: .primary,
-                            layout: .titleAndIcon,
-                            size: size
+                            layout: .titleAndIcon
                         ))
                     }
                 }
+                .componentSize(size)
                 .pickerStyle(.segmented)
                 .padding()
                 
@@ -216,9 +207,9 @@ struct ButtonDemoView: View {
                     .buttonStyle(ButtonStyle(
                         type: .primary,
                         layout: .titleOnly,
-                        size: .small,
                         isLoading: true
                     ))
+                    .componentSize(.small)
                     
                     Button(action: { }) {
                         Label("Loading", icon: .outlined(.poweroff))
@@ -376,7 +367,7 @@ struct ButtonDemoView: View {
                 }
                 .padding(.vertical)
                 
-                Text("`block` property will make the button fit to its parent width.")
+                Text("`isBlock` parameter will make the button fit to its parent width.")
             }
         }
     }
@@ -560,7 +551,7 @@ struct ButtonDemoView: View {
                 }
                 .padding(.vertical)
                 
-                Text("To mark a button as disabled, add the `disabled` property to the `Button`.")
+                Text("To mark a button as disabled, add the `disabled(_ disabled: Bool)` modifier to the `Button`.")
             }
         }
     }
@@ -611,7 +602,7 @@ struct ButtonDemoView: View {
                 }
                 .padding(.vertical)
                 
-                Text("`danger` is a property of button after antd 4.0.")
+                Text("`danger` property from antd can be reproduced using `destructive` button role.")
             }
         }
     }

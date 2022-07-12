@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Color {
+internal extension Color {
     enum Site: String {
         case buttonGhostWrapper = "button-ghost-wrapper"
     }

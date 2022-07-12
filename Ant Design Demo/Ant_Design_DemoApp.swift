@@ -11,13 +11,14 @@ import SwiftUI
 @main
 struct Ant_Design_DemoApp: App {
     init() {
-
+//        Preferences.primaryColorPalette = .volcano
     }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .background(Preferences.componentBackground)
+                .prepareMessage()
         }
     }
 }

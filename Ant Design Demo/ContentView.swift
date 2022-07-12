@@ -20,6 +20,9 @@ struct ContentView: View {
                 NavigationLink("Switch") {
                     SwitchDemoView()
                 }
+                NavigationLink("Message") {
+                    MessageDemoView()
+                }
             }
             .navigationTitle("Components")
             .navigationBarTitleDisplayMode(.inline)
