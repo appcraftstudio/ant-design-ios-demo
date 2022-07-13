@@ -124,20 +124,14 @@ struct MessageDemoView: View {
         var body: some View {
             Section("Message with loading indicator") {
                 VStack(alignment: .leading) {
-                    Button {
-                        isPresented = true
-                    } label: {
-                        Label("Display a loading indicator", icon: .outlined(.clear))
-                    }
-                    .buttonStyle(AntDesign.ButtonStyle(
-                        layout: .titleOnly
-                    ))
+                    Toggle("Display a loading indicator", isOn: $isPresented)
+                        .toggleStyle(AntDesign.ToggleStyle())
                 }
                 .padding(.vertical)
                 
                 Text("Display a global loading indicator, which is dismissed by itself asynchronously.")
             }
-            .message(.loading, text: "Action in progress..", isPresented: $isPresented)
+            .message(.loading, text: "Action in progress..", duration: 10, isPresented: $isPresented)
         }
     }
     

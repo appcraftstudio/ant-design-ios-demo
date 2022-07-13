@@ -1,5 +1,5 @@
 //
-//  Ant_Design_DemoApp.swift
+//  AntDesignDemoApp.swift
 //  Ant Design Demo
 //
 //  Created by François Boulais on 04/07/2022.
@@ -9,9 +9,9 @@ import AntDesign
 import SwiftUI
 
 @main
-struct Ant_Design_DemoApp: App {
+struct AntDesignDemoApp: App {
     init() {
-//        Preferences.primaryColorPalette = .volcano
+        Preferences.primaryColorPalette = .cyan
     }
     
     var body: some Scene {

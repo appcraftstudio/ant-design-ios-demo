@@ -11,7 +11,7 @@
 		8E169CB728738183001D0C9C /* IconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E169CB628738183001D0C9C /* IconPickerView.swift */; };
 		8E169CB928745808001D0C9C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E169CB828745808001D0C9C /* Color.swift */; };
 		8E169CBB287557FF001D0C9C /* SwitchDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E169CBA287557FF001D0C9C /* SwitchDemoView.swift */; };
-		8E73182B2872CA3D007C1B99 /* Ant_Design_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73182A2872CA3D007C1B99 /* Ant_Design_DemoApp.swift */; };
+		8E73182B2872CA3D007C1B99 /* AntDesignDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73182A2872CA3D007C1B99 /* AntDesignDemoApp.swift */; };
 		8E73182D2872CA3D007C1B99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E73182C2872CA3D007C1B99 /* ContentView.swift */; };
 		8E73182F2872CA3F007C1B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E73182E2872CA3F007C1B99 /* Assets.xcassets */; };
 		8E7318322872CA3F007C1B99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7318312872CA3F007C1B99 /* Preview Assets.xcassets */; };
@@ -25,7 +25,7 @@
 		8E169CB828745808001D0C9C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8E169CBA287557FF001D0C9C /* SwitchDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchDemoView.swift; sourceTree = "<group>"; };
 		8E7318272872CA3D007C1B99 /* Ant Design.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ant Design.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E73182A2872CA3D007C1B99 /* Ant_Design_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ant_Design_DemoApp.swift; sourceTree = "<group>"; };
+		8E73182A2872CA3D007C1B99 /* AntDesignDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntDesignDemoApp.swift; sourceTree = "<group>"; };
 		8E73182C2872CA3D007C1B99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E73182E2872CA3F007C1B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E7318312872CA3F007C1B99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				8E73183D2872DC86007C1B99 /* Ant Design Demo.entitlements */,
-				8E73182A2872CA3D007C1B99 /* Ant_Design_DemoApp.swift */,
+				8E73182A2872CA3D007C1B99 /* AntDesignDemoApp.swift */,
 				8E73182C2872CA3D007C1B99 /* ContentView.swift */,
 				8E73182E2872CA3F007C1B99 /* Assets.xcassets */,
 				8E7318302872CA3F007C1B99 /* Preview Content */,
@@ -180,7 +180,7 @@
 				8EC893BF287DBA8100979A19 /* MessageDemoView.swift in Sources */,
 				8E73182D2872CA3D007C1B99 /* ContentView.swift in Sources */,
 				8E169CB728738183001D0C9C /* IconPickerView.swift in Sources */,
-				8E73182B2872CA3D007C1B99 /* Ant_Design_DemoApp.swift in Sources */,
+				8E73182B2872CA3D007C1B99 /* AntDesignDemoApp.swift in Sources */,
 				8E169CBB287557FF001D0C9C /* SwitchDemoView.swift in Sources */,
 				8E169CB928745808001D0C9C /* Color.swift in Sources */,
 				8E169CB528732E9D001D0C9C /* ButtonDemoView.swift in Sources */,
