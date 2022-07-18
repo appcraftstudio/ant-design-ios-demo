@@ -23,6 +23,9 @@ struct ContentView: View {
                 NavigationLink("Message") {
                     MessageDemoView()
                 }
+                NavigationLink("Progress") {
+                    ProgressDemoView()
+                }
             }
             .navigationTitle("Components")
             .navigationBarTitleDisplayMode(.inline)

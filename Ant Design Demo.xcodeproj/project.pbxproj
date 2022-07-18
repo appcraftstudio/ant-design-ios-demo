@@ -17,6 +17,7 @@
 		8E7318322872CA3F007C1B99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7318312872CA3F007C1B99 /* Preview Assets.xcassets */; };
 		8E73183C2872CA7B007C1B99 /* AntDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 8E73183B2872CA7B007C1B99 /* AntDesign */; };
 		8EC893BF287DBA8100979A19 /* MessageDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC893BE287DBA8100979A19 /* MessageDemoView.swift */; };
+		8EC893C1287F287F00979A19 /* ProgressDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC893C0287F287F00979A19 /* ProgressDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8E7318392872CA70007C1B99 /* AntDesign */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AntDesign; path = ../Packages/AntDesign; sourceTree = "<group>"; };
 		8E73183D2872DC86007C1B99 /* Ant Design Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ant Design Demo.entitlements"; sourceTree = "<group>"; };
 		8EC893BE287DBA8100979A19 /* MessageDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDemoView.swift; sourceTree = "<group>"; };
+		8EC893C0287F287F00979A19 /* ProgressDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				8E169CB428732E9D001D0C9C /* ButtonDemoView.swift */,
 				8EC893BE287DBA8100979A19 /* MessageDemoView.swift */,
 				8E169CBA287557FF001D0C9C /* SwitchDemoView.swift */,
+				8EC893C0287F287F00979A19 /* ProgressDemoView.swift */,
 				8E169CB628738183001D0C9C /* IconPickerView.swift */,
 				8E169CB828745808001D0C9C /* Color.swift */,
 			);
@@ -183,6 +186,7 @@
 				8E73182B2872CA3D007C1B99 /* AntDesignDemoApp.swift in Sources */,
 				8E169CBB287557FF001D0C9C /* SwitchDemoView.swift in Sources */,
 				8E169CB928745808001D0C9C /* Color.swift in Sources */,
+				8EC893C1287F287F00979A19 /* ProgressDemoView.swift in Sources */,
 				8E169CB528732E9D001D0C9C /* ButtonDemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
